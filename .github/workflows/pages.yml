@@ -15,9 +15,20 @@ jobs:
 
       - name: Install vue cli
         run: yarn global add @vue/cli
+
+      - name: 🗃 Cache Yarn
+        id: yarn-cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          # De cache wordt alleen naderhand opgeslagen als yarn.lock veranderd is
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          # De cache wordt opgehaald als os hetzelfde is (altijd)
+          restore-keys: ${{ runner.os }}-yarn-
         
       - name: Install yarn dependencies
-        run: yarn install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install --immutable
         
       - name: Run build
         run: yarn run build
