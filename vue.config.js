@@ -15,6 +15,11 @@ module.exports = {
             entry: 'src/assets/behindthescenes.js',
             template: 'src/pages/behindthescenes/behindthescenes.html',
             filename: 'behindthescenes.html'
+        },
+        nieuwefilm: {
+            entry: 'src/assets/nieuwefilm.js',
+            template: 'src/pages/nieuwefilm/nieuwefilm.html',
+            filename: 'nieuwefilm.html'
         }
     }
 };
