@@ -5,27 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Cover Template · Bootstrap v5.1</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luxurious+Roman&display=swap" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -37,41 +21,93 @@
         
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
-                font-size: 3.5rem;
+                font-size: 3.
+                5rem;
             }
         }
+
+        .footer {
+            bottom: 0;
+        }
+
+        .cover-container {
+            margin-top: 100px;
+        }
     </style>
-
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex text-center text-white bg-dark">
+<div class="header position-fixed">
+</div>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
+<div class="footer position-fixed">
+</div>
+
+    <div class="container">
+        <header class="mb-auto position-sticky">
             <div>
                 <h3 class="float-md-start mb-0">Cover</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Eerdere producties</a>
+                    <a class="nav-link" href="#">Behind the scenes</a>
                     <a class="nav-link" href="#">Contact</a>
                 </nav>
             </div>
         </header>
 
         <main class="px-3">
-            <h1>Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1>Civitas Producties</h1>
+            <p class="lead"> Filmproductie vanuit C.S.R.<p>
+            <p>Ter gelegenheid van het 12e lustrum van studentenvereniging C.S.R. Delft, zal Civitas Producties een nieuwe film uitbrengen. </p>
+            <p>Film en andere culturele uitingen hebben de eigenschap om door de grenzen van generaties en groepen heen te breken. Iets als een film, kan mensen samen brengen. Daarom is een ieder uitgenodigd om naar deze speelfilm te komen. Komt u ook?</p>
             <p class="lead">
-                <a href="thema.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+                <a href="thema.html" class="btn btn-lg btn-secondary fw-bold border-black bg-geel">Tickets</a>
             </p>
         </main>
+        <main class="px-3">
+            <h1>"De Illustere Titel"</h1>
+            <p></p>
+            <h3>Trailer</h3>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p></p>
+            <h3>Posters</h3>
+            <p></p>
+            <h3>Credits</h3>
+            <b>Civitas Producties </b>
+            <ul class="list-unstyled">
+                <li>Ruben van Briemen </li>
+                <li>Boris Steenhuis</li>
+                <li>Johan Ras</li>
+                <li>Jeanine de Jong</li>
+            </ul>
+            <b>Hoofdacteurs</b>
+            <ul class="list-unstyled">
+                <li>Lucas van Rossum</li>
+                <li>Janine de Wit</li>
+                <li>Wilgemijne Prins</li>
+                <li>Nathan van Beugen</li>
+            </ul>
+            <b>Overige acteurs</b>
+            <p>...</p>
+            <b>Overige medewerkers</b>
+            <p>...</p>
+            <h2>Financiëel mede mogelijk gemaakt door</h2></b>
+            <p>Mede mogelijk gemaakt door Gemeente Delft, TU Delft, YESDelft en C.S.R. Delft
+            <>Wilt u dit project ook steunen via sponsoring? <a href="mailto:acqcie@csrdelft.nl" class="text-white">Mail</a> dan naar de acquisitiecommissie voor meer informatie </p>
 
-        <footer class="mt-auto text-white-50">
-            <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-        </footer>
+            <footer class="mt-auto text-white-50">
+            <p>Webpagina gemaakt door <a href="https://csrdelft.nl/" class="text-white">C.S.R. Delft</a>.</p>
+            </footer>
+        </main>
+    </div>
+
+    <div>
+        <p style="height: 3000px">
+
+        </p>
     </div>
 
 

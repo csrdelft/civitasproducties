@@ -10,6 +10,11 @@ module.exports = {
             entry: 'src/pages/thema/thema.js',
             template: 'src/pages/thema/thema.html',
             filename: 'thema.html'
+        },
+        behindthescenes: {
+            entry: 'src/pages/behindthescenes/behindthescenes.js',
+            template: 'src/pages/behindthescenes/behindthescenes.html',
+            filename: 'behindthescenes.html'
         }
     }
 };
