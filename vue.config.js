@@ -7,12 +7,12 @@ module.exports = {
             filename: 'index.html'
         },
         thema: {
-            entry: 'src/pages/thema/thema.js',
+            entry: 'src/assets/thema.js',
             template: 'src/pages/thema/thema.html',
             filename: 'thema.html'
         },
         behindthescenes: {
-            entry: 'src/pages/behindthescenes/behindthescenes.js',
+            entry: 'src/assets/behindthescenes.js',
             template: 'src/pages/behindthescenes/behindthescenes.html',
             filename: 'behindthescenes.html'
         }
