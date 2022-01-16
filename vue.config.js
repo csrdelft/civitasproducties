@@ -11,10 +11,10 @@ module.exports = {
             template: 'src/pages/ticketverkoop/ticketverkoop.html',
             filename: 'ticketverkoop.html'
         },
-        behindthescenes: {
-            entry: 'src/assets/behindthescenes.js',
-            template: 'src/pages/behindthescenes/behindthescenes.html',
-            filename: 'behindthescenes.html'
+        eerderefilms: {
+            entry: 'src/assets/eerderefilms.js',
+            template: 'src/pages/eerderefilms/eerderefilms.html',
+            filename: 'eerderefilms.html'
         },
         nieuwefilm: {
             entry: 'src/assets/nieuwefilm.js',
