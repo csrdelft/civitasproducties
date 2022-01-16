@@ -11,14 +11,16 @@ $kleur-goud3: #8f5a14;
 $kleur-wit: #FFFFFF;
 $kleur-zwart: #000000;
 $primary: #D9A13F;
-$secondary: #fadd00;
+$secondary: #ebb803;
 $font-color-primary: #ebb803;
 $headings-font-weight: 700;
 $h1-font-size: 4.4rem;
-$h2-font-size: 3.2rem;
-$h3-font-size: 2rem;
-$h4-font-size: 1.3rem;
-$font-family-base: 'Libre Baskerville', serif;
-$font-family: 'Luxurious Roman', cursive;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1rem;
+$font-family-base: 'Luxurious Roman';
+$headings-font-family: 'Libre Baskerville', serif;
+
+$headings-color: $kleur-geel;
 
 $container-max-widths: (sm: 600px, md: 700px, lg: 700px, xl: 800px, xxl: 1320px);

@@ -6,10 +6,10 @@ module.exports = {
             template: 'public/index.html',
             filename: 'index.html'
         },
-        thema: {
-            entry: 'src/assets/thema.js',
-            template: 'src/pages/thema/thema.html',
-            filename: 'thema.html'
+        kaartjes: {
+            entry: 'src/assets/kaartjes.js',
+            template: 'src/pages/kaartjes/kaartjes.html',
+            filename: 'kaartjes.html'
         },
         behindthescenes: {
             entry: 'src/assets/behindthescenes.js',

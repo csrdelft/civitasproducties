@@ -18,3 +18,23 @@
   z-index: -1;
 }
 
+h2 {
+  color: #D9A13F;
+
+}
+
+h3 {
+  color: blue;
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
