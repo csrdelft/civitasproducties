@@ -2,7 +2,7 @@ import './nieuwefilm.scss'
 
 import 'bootstrap'
 
-var yourDateToGo = Date.parse('07 Feb 2022 20:00:00 GMT+1');//new Date(2022,1,6,19,0); //here you're making new Date object
+var yourDateToGo = Date.parse('07 Mar 2022 20:00:00 GMT+1');//new Date(2022,1,6,19,0); //here you're making new Date object
 // yourDateToGo.setValue(2022,2,7,20,0) //="2022-02-07"; //your're setting date in this object 1 day more from now
 //you can change number of days to go by putting any number in place of 1
 
