@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="nl" class="h-100">
 
 <head>
     <meta charset="utf-8">
@@ -124,41 +124,48 @@
             <h2>Ticketverkoop</h2>
             <p>Ons streven is om de ticketprijs zo laagdrempelig mogelijk te houden. Dankzij Gemeente Delft en TU Delft
                 is dat ook mogelijk gebleken. Nu kunnen we u een filmervaring aanbieden voor €7,50. </p>
+            <br>
 
-           <p>Vanaf woensdag 10 februari zult u uw tickets hier kunnen bestellen</p> <br>
+            <div>
 
-<!--            <div>-->
-<!--                <p>U kunt een ticket bestellen door uw naam, mailadres en gewenste aantal tickets hieronder in-->
-<!--                    te vullen.-->
-<!--                    <br>Wij zullen u dan mailen met een betaalverzoek, en later uw ticket(s).</p>-->
-<!--                <br>-->
-<!--                <form>-->
-<!--                    <div class="row">-->
-<!--                        <div class="col">-->
-<!--                            <input type="text" id="voornaam" class="form-control" placeholder="Voornaam">-->
-<!--                        </div>-->
-<!--                        <div class="col">-->
-<!--                            <input type="text" id="achternaam" class="form-control" placeholder="Achternaam">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <br>-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="email" class="form-control" id="exampleInputEmail1"-->
-<!--                               aria-describedby="emailHelp"-->
-<!--                               placeholder="Enter email">-->
-<!--                        <br>-->
-<!--                        <select class="form-control" id="tickets">-->
-<!--                            <option selected>1 Ticket - €7,50</option>-->
-<!--                            <option>2 Tickets - €15,00</option>-->
-<!--                            <option>3 Tickets - €22,50</option>-->
-<!--                            <option>4 Tickets - €30,00</option>-->
-<!--                            <option>5 Tickets - €37,50</option>-->
-<!--                        </select>-->
-<!--                        <br>-->
-<!--                    </div>-->
-
-<!--                    <button type="submit" class="btn btn-primary">Verstuur bestelling</button>-->
-<!--                </form>-->
+                <p>U kunt een ticket bestellen door uw naam, mailadres en gewenste aantal tickets hieronder in
+                    te vullen.
+                    <br>Wij zullen u dan mailen met een betaalverzoek, en later uw ticket(s).</p>
+                <br>
+                <form method="post" action="/civitasproducties/bestel" id="bestel-form">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="errors alert d-none"></div>
+                        </div>
+                        <div class="col-6">
+                            <input required type="text" id="voornaam" class="form-control" placeholder="Voornaam" name="voornaam">
+                        </div>
+                        <div class="col-6">
+                            <input required type="text" id="achternaam" class="form-control" placeholder="Achternaam" name="naam">
+                        </div>
+                        <div class="col-12">
+                        <input required type="email" class="form-control" id="exampleInputEmail1"
+                               name="email"
+                               aria-describedby="emailHelp"
+                               placeholder="Enter email">
+                        </div>
+                        <div class="col-12">
+                        <select class="form-select" id="tickets" name="aantal">
+                            <option value="1" selected>1 Ticket - €7,50</option>
+                            <option value="2">2 Tickets - €15,00</option>
+                            <option value="3">3 Tickets - €22,50</option>
+                            <option value="4">4 Tickets - €30,00</option>
+                            <option value="5">5 Tickets - €37,50</option>
+                        </select>
+                        </div>
+                        <div class="col-12">
+                            <div id="captcha"></div>
+                        </div>
+                        <div class="col-12">
+                            <button name="submitButton" type="submit" class="btn btn-primary">Verstuur bestelling</button>
+                        </div>
+                    </div>
+                </form>
 
                 <div>
                     <br> <br>
@@ -171,6 +178,35 @@
         </div>
     </main>
 </div>
+
+<script type="text/javascript">
+    var captchaLoaded = false;
+
+    function checkVisible(elm) {
+        var rect = elm.getBoundingClientRect();
+        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+        return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+    // Wordt opgepikt door recaptcha
+    var onloadCallback = function () {
+        let listener = function () {
+            if (checkVisible(document.getElementById('captcha')) && !captchaLoaded) {
+                captchaLoaded = true;
+                grecaptcha.render('captcha', {
+                    'sitekey': '6Lc9TCITAAAAAGglcvgYvSwL-ci4A3Hkv8s1xRIX',
+                    'hl': 'nl',
+                });
+            }
+        };
+        window.addEventListener('scroll', listener)
+
+        listener();
+    };
+
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async
+        defer></script>
 </body>
 
 </html>
