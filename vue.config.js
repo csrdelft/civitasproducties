@@ -13,8 +13,8 @@ module.exports = {
         },
         eerderefilms: {
             entry: 'src/assets/eerderefilms.js',
-            template: 'src/pages/eerderefilms/contact.html',
-            filename: 'contact.html'
+            template: 'src/pages/eerderefilms/eerderefilms.html',
+            filename: 'eerderefilms.html'
         },
         contact: {
             entry: 'src/assets/contact.js',
