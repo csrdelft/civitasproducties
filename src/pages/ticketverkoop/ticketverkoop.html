@@ -13,21 +13,19 @@
           rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
 </head>
 
 
-<body class="d-flex text-center text-white bg-dark">
+<body class="d-flex text-center text-white bg-background">
 <div class="header position-fixed">
 </div>
-
 <div class="footer position-fixed">
 </div>
 
 <div class="container" style="margin-bottom: 300px;">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
 
+    <nav class="navbar navbar-expand-md border-bottom navbar-dark bg-background">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Civitas Producties</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,10 +42,14 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="ticketverkoop.html">Ticketverkoop</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <main class="px-3">
         <div><h1>Ticketverkoop</h1>
@@ -63,11 +65,6 @@
                                 Pathé Delft<br>Vesteplein 5, Delft<br>
                                 ma 7 maart, 20:00<br>
                                 €7,50<br>Black tie</p>
-
-                            <a href="https://www.eventbrite.nl/e/filmpremiere-csr-film-tickets-248775322687"
-                               class="btn btn-secondary">Eventbrite</a>
-                            <a href="https://csrdelft.nl/groepen/ketzers/11715" class="btn btn-secondary">C.S.R.
-                                Delft</a>
                         </div>
                     </div>
                     <br>
@@ -79,13 +76,13 @@
                     <p>Onder voorbehoud van de maatregelen omtrent corona, zal op 7 maart 20:00 de première
                         plaatsvinden in Bioscoop Pathé Delft.
                         <br>Dresscode: black tie.
-                    <!--                    <p>Voor leden van C.S.R. Delft is er een ketzer voor tickets. Externen zijn van harte uitgenodigd voor de première en kunnen hun tickets via eventbrite verkrijgen voor €7,50.</p>-->
-                    <!--                    <p><i>Locatie: Pathé Delft, Vesteplein 5 te Delft<br>Datum: ma 7 februari, 20:00 (Backup is 7 maart)</i>-->
-                    <!--            <h3>Tickets voor de première aanschaffen</h3>-->
-                    <!--            <a href="https://csrdelft.nl/groepen/ketzers/11715"-->
-                    <!--               class="btn btn-sm btn-secondary fw-bold border-black ">C.S.R.-leden</a>-->
-                    <!--            <a href="https://www.eventbrite.nl/"-->
-                    <!--               class="btn btn-sm btn-secondary fw-bold border-black ">Delftse burgers en andere geïnteresseerden</a>-->
+                        <!--                    <p>Voor leden van C.S.R. Delft is er een ketzer voor tickets. Externen zijn van harte uitgenodigd voor de première en kunnen hun tickets via eventbrite verkrijgen voor €7,50.</p>-->
+                        <!--                    <p><i>Locatie: Pathé Delft, Vesteplein 5 te Delft<br>Datum: ma 7 februari, 20:00 (Backup is 7 maart)</i>-->
+                        <!--            <h3>Tickets voor de première aanschaffen</h3>-->
+                        <!--            <a href="https://csrdelft.nl/groepen/ketzers/11715"-->
+                        <!--               class="btn btn-sm btn-secondary fw-bold border-black ">C.S.R.-leden</a>-->
+                        <!--            <a href="https://www.eventbrite.nl/"-->
+                        <!--               class="btn btn-sm btn-secondary fw-bold border-black ">Delftse burgers en andere geïnteresseerden</a>-->
                 </div>
             </div>
         </div>
@@ -96,8 +93,9 @@
                 <div>
                     <h2>Extra vertoning in Sociëteit Confide</h2>
                     <p>Op een nader te bepalen datum, zal de film gratis vertoond worden in Sociëteit Confide, Oude
-                        Delft 9. U bent van harte uitgenodigd.
-                        Aanmelden kan via Eventbrite.</p>
+                        Delft 9. Meer informatie volgt nog.
+                        <!--                        Aanmelden kan via Eventbrite.-->
+                    </p>
                     <!--            <p><i>Locatie: Sociëteit Confide, Oude Delft 9 te Delft<br>Datum: Nog onbekend</i><br>&ndash;&gt;-->
                     <!--            <p><a href="https://www.eventbrite.nl/"-->
                     <!--                  class="btn btn-md btn-secondary fw-bold border-black ">Kaartjes gratis voorstelling</a>-->
@@ -113,12 +111,62 @@
                             Confide, Oude Delft 9, Delft<br>
                             Datum onbekend<br>
                             Gratis</p>
-                        <a href="https://www.eventbrite.nl/e/filmvertoning-tickets-248774259507"
-                           class="btn btn-secondary">Eventbrite</a>
+                        <!--                        <a href="https://www.eventbrite.nl/e/filmvertoning-tickets-248774259507"-->
+                        <!--                           class="btn btn-secondary">Eventbrite</a>-->
                     </div>
                 </div>
             </div>
 
+        </div>
+        <br>
+        <div>
+            <h2>Ticketverkoop</h2>
+            <p>Ons streven is om de ticketprijs zo laagdrempelig mogelijk te houden. Dankzij Gemeente Delft en TU Delft
+                is dat ook mogelijk gebleken. Nu kunnen we u een filmervaring aanbieden voor €7,50. </p>
+            <br>
+
+            <div>
+
+                <p>U kunt een ticket bestellen door uw naam, mailadres en gewenste aantal tickets hieronder in
+                    te vullen.
+                    <br>Wij zullen u dan mailen met een betaalverzoek, en later uw ticket(s).</p>
+                <br>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="voornaam" class="form-control" placeholder="Voornaam">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="achternaam" class="form-control" placeholder="Achternaam">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                               aria-describedby="emailHelp"
+                               placeholder="Enter email">
+                        <br>
+                        <select class="form-control" id="tickets">
+                            <option selected>1 Ticket - €7,50</option>
+                            <option>2 Tickets - €15,00</option>
+                            <option>3 Tickets - €22,50</option>
+                            <option>4 Tickets - €30,00</option>
+                            <option>5 Tickets - €37,50</option>
+                        </select>
+                        <br>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Verstuur bestelling</button>
+                </form>
+
+                <div>
+                    <br> <br>
+                    <p class="lead">Lid van C.S.R. Delft?</p>
+                    <p>Voor leden van C.S.R. Delft is het mogelijk te bestellen via de stek.</p>
+                    <a href="https://csrdelft.nl/groepen/ketzers/11715" class="btn btn-primary">
+                        Bestel via de stek</a>
+                </div>
+            </div>
         </div>
     </main>
 </div>

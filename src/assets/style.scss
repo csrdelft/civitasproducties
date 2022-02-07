@@ -13,16 +13,98 @@
   position: fixed;
   bottom: 0;
   background-size: contain;
- // background-image: url("filmrolgeel.png");
+  // background-image: url("filmrolgeel.png");
   opacity: 0.25;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
+.bg-background {
+  background-color: $achtergrondzwart !important;
+}
+
 h2 {
-  color: #D9A13F;
+  color: $h2;
 }
 
 h3 {
-  color: #a18594;
+  color: $h3;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Container holding the image and the text */
+
+/* Top centered text */
+.top-centered {
+  position: absolute;
+  top: 30px;
+  margin: 0 20px 0 20px;
+  color: black;
+  text-align: center;
+
+}
+
+.card {
+  height: 100%;
+}
+
+.actie-card:hover {
+  opacity: 0.8;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  transform: scale(1.1)
+}
+
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+//divider
+.wrapper
+{
+  padding-bottom: 90px;
+}
+
+.divider
+{
+  position: relative;
+  margin-top: 90px;
+  height: 1px;
+}
+
+.div-transparent:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, $primary, white, $primary);
+}
+
+.div-arrow-down:after
+{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-bottom: 1px solid rgb(48,49,51);
+  border-right: 1px solid rgb(48,49,51);
 }

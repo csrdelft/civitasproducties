@@ -1,22 +1,39 @@
 /* variables */
 
 // $kleur-rood: #7e1621;
-$kleur-geel: #D9A13F;
+$kleur1: #00243f; //zwart
+$kleur2: #264b77; //donker blauw
+$kleur3: #3c5b74; // blauw
+$kleur4: #a3acb1; //grijs
+$kleur5: #a76b09; //goud
+$kleur6:#2f586e; //donker groenblauw
+
+$posterlichtblauw: #c0d4f5; //lichtblauw van poster
+$posterdonkerblauw: #2087fa;
+$goud: #D9A13F;
+$lichtgoud:#e6cc7e;
+$posterjetzer: #724d2e;
+$achtergrondzwart: $kleur1;
+$black: #0b0b0d;
 $kleur-wit: #FFFFFF;
-$kleur-zwart: #000000;
-$primary: #D9A13F;
-$secondary: #a18594;
-$font-color-primary: #ebb803;
+
+$primary: $kleur5;
+$secondary: $kleur4;
+$tertiary: $kleur6;
+$h3: $kleur6;
+$h2: $kleur5;
+$font-color-primary: #ebb803; //ook soort van licht geel/beige
 $headings-font-weight: 700;
+$headings-color: $primary;
+$card-bg: $kleur3;
+
 $h1-font-size: 4.4rem;
 $h2-font-size: 2rem;
 $h3-font-size: 1rem;
 $h4-font-size: 1rem;
 $font-family-base: 'Luxurious Roman';
 $headings-font-family: 'Libre Baskerville', serif;
-$card-bg: #D9A13F;
 
 
-$headings-color: $kleur-geel;
 
 $container-max-widths: (sm: 600px, md: 600px, lg: 700px, xl: 800px, xxl: 900px);

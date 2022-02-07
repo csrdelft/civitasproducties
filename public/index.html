@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="theme-color" content="#7952b3">
+    <meta name="theme-color" content="primary">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="d-flex text-center text-white bg-dark">
+<body class="d-flex text-center text-white bg-background">
 <div class="header position-fixed">
 </div>
 
@@ -24,10 +24,11 @@
 </div>
 
 <div class="container" style="margin-bottom: 300px;">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
 
-            <a class="navbar-brand" href="index.html">Civitas Producties</a>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md border-bottom border-secondary navbar-dark bg-background">
+        <div class="container-fluid">
+            <a class="navbar-brand text-secondary" href="index.html" >Civitas Producties</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,30 +44,47 @@
                     <li class="nav-item">
                         <a class="nav-link" href="ticketverkoop.html">Ticketverkoop</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main class="px-3">
-        <h1>Civitas Producties</h1>
+
+        <!--Poster-->
 
         <div>
-            <p class="lead"> Een studentengroep van C.S.R. die speelfilms maakt</p>
-            <img src="./civitasproducties.jpg"><br>
-        </div>
+            <br>
+            <h1>Civitas Producties</h1>
+            <h2>presenteert haar nieuwe film:</h2>
+            <br>
+            <div class="container">
+                <img src="poster.jpg" alt="poster" style="width:100%">
+                <!--            <div class="text-block">-->
+                <!--                <h2>Dit is een tekstblok</h2>-->
+                <!--                <p>What a beautiful sunrise</p>-->
+                <!--            </div>-->
+            </div>
+            <!--        Divider-->
+            <div class="wrapper">
+                <div class="divider div-transparent div-arrow-down"></div>
+            </div>
 
-        <br>
-
-        <div>
             <h2>Nieuwe productie</h2>
             <p class="lead"> Filmproductie vanuit C.S.R.
-            <p>Ter gelegenheid van het 12e lustrum van studentenvereniging C.S.R. Delft, zal Civitas Producties een
+            <p>Ter gelegenheid van het 12e lustrum van studentenvereniging C.S.R. Delft, zal Civitas Producties
+                een
                 nieuwe
                 film uitbrengen. </p>
-            <p>Film en andere culturele uitingen hebben de eigenschap om door de grenzen van generaties en groepen heen
+            <p>Film en andere culturele uitingen hebben de eigenschap om door de grenzen van generaties en
+                groepen
+                heen
                 te
-                breken. Iets als een film, kan mensen samen brengen. Daarom is een ieder die wil, uitgenodigd om naar
+                breken. Iets als een film, kan mensen samen brengen. Daarom is een ieder die wil, uitgenodigd om
+                naar
                 deze
                 speelfilm te komen.</p>
             <p class="lead">
@@ -74,25 +92,80 @@
                    class="btn btn-lg btn-secondary fw-bold border-black bg-geel">Ticketverkoop</a></p>
         </div>
 
-        <br>
+        <!--        Divider-->
+        <div class="wrapper">
+            <div class="divider div-transparent div-arrow-down"></div>
+        </div>
 
-        <div>
-            <h2>C.S.R. Delft</h2>
-            <p>Civitas Studiosorum Reformatorum is een bruisende, actieve, christelijke studentenvereniging in Delft,
-                rijk aan tradities die zijn ontstaan in haar 60-jarig bestaan. Het is een breed gezelschap van zo'n 275
-                leden met een zeer gevarieerde (kerkelijke) achtergrond, maar met een duidelijke eenheid door het
-                christelijk geloof. C.S.R. is de plek waar al tientallen jaren studenten goede vrienden van elkaar
-                worden, op intellectueel en geestelijk gebied groeien en goede studentengrappen uithalen.</p>
-            <a href="https://csrdelft.nl/" alt="Civitas Producties" style="width:100%">
-                <img class="img-fluid" src="logocsrdelft.svg" href="https://csrdelft.nl/" alt="C.S.R. Delft"
-                     style="width:30%;filter: invert(1);"> </a>
+        <!--        Drie hover cards-->
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="nieuwefilm.html" class="text-decoration-none text-white" >
+                <div class="card actie-card">
+                    <img style="margin: 20px" src="./postervierkant.jpg" class="rounded-circle" alt="Card2">
+                    <div class="card-body">
+                        <b class="card-title">Nieuwe film</b>
+                        <p class="card-text">Trailer, omschrijving, posters en wat al niet meer</p>
+                    </div>
+                </div>
+                    </a>
+            </div>
+            <div class="col-sm-4">
+                <div class="card actie-card">
+                    <img style="margin: 20px" src="./eerderefilmsvierkant.jpg" class="rounded-circle" alt="Card2">
+                    <div class="card-body">
+                        <b class="card-title">Eerdere films</b>
+                        <p class="card-text">Uit 1982 en 1991</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card actie-card">
+                    <a href="contact.html" alt="contact">
+                        <img class="img-fluid rounded-circle" src="./cpvierkant.jpg" href="https://csrdelft.nl/"
+                             alt="C.S.R. Delft"
+                             style="margin:20px;width:80%"> </a>
+                    <div class="card-body">
+                        <b class="card-title">Achter de schermen</b>
+                        <p class="card-text">Staat Civitas Producties</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <br>
+
+        <!--        Divider-->
+        <div class="wrapper">
+            <div class="divider div-transparent div-arrow-down"></div>
+        </div>
+        <!--C.S.R. Delft-->
+        <div class="container">
+            <h2>C.S.R. Delft</h2>
+            <br>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <p>Civitas Studiosorum Reformatorum is een bruisende, actieve, christelijke studentenvereniging in
+                        Delft, rijk aan tradities die zijn ontstaan in haar 60-jarig bestaan. Het is een breed gezelschap van
+                        zo'n 275 leden met een zeer gevarieerde (kerkelijke) achtergrond, maar met een duidelijke eenheid door
+                        het christelijk geloof. C.S.R. is de plek waar al tientallen jaren studenten goede vrienden van
+                        elkaar worden, op intellectueel en geestelijk gebied groeien en goede studentengrappen uithalen.</p>
+                </div>
+            <div class="col-md-6">
+                <a href="https://csrdelft.nl/" alt="Civitas Producties" style="width:100%">
+                    <img class="img-fluid" src="logocsrdelft.svg" href="https://csrdelft.nl/" alt="C.S.R. Delft"
+                         style="width:200px;filter: invert(0.75);"> </a>
+            </div>
+</div>        </div>
+
+
         <br>
+        <br>
+
+        <!--        Sponsors-->
         <div>
             <h2>Sponsors</h2>
-            <p>Mede mogelijk gemaakt door Gemeente Delft, TU Delft, YES!Delft Students en C.S.R. Delft
+            <p>Mede mogelijk gemaakt door Gemeente Delft, TU Delft, YES!Delft Students en C.S.R. Delft <br>
             <div class="row align-items-center">
                 <div class="col"><a href="https://www.delft.nl/">
                     <img src="logogemeente.png" alt="Gemeente" style="width:100%">
@@ -111,7 +184,8 @@
                     dan naar de acquisitiecommissie voor meer informatie </p>
 
                 <footer class="mt-auto text-white-50">
-                    <p>Webpagina gemaakt door <a href="https://csrdelft.nl/" class="text-white">C.S.R. Delft</a>.</p>
+                    <p>Webpagina gemaakt door <a href="https://csrdelft.nl/" class="text-white">C.S.R. Delft</a>.
+                    </p>
                 </footer>
             </div>
         </div>
